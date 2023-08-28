@@ -9,20 +9,42 @@
 /* Begin PBXBuildFile section */
 		FBDB71D12A9C263400EC9F38 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDB71D02A9C263400EC9F38 /* AppDelegate.swift */; };
 		FBDB71D32A9C263400EC9F38 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDB71D22A9C263400EC9F38 /* SceneDelegate.swift */; };
-		FBDB71D52A9C263400EC9F38 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDB71D42A9C263400EC9F38 /* ViewController.swift */; };
 		FBDB71DA2A9C263600EC9F38 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBDB71D92A9C263600EC9F38 /* Assets.xcassets */; };
 		FBDB71DD2A9C263600EC9F38 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBDB71DB2A9C263600EC9F38 /* LaunchScreen.storyboard */; };
+		FBDB71E82A9C2EFE00EC9F38 /* SunBase in Frameworks */ = {isa = PBXBuildFile; productRef = FBDB71E72A9C2EFE00EC9F38 /* SunBase */; };
+		FBDB71EB2A9C2F1700EC9F38 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = FBDB71EA2A9C2F1700EC9F38 /* SnapKit */; };
+		FBDB71EE2A9C2F7000EC9F38 /* KakaoSDK in Frameworks */ = {isa = PBXBuildFile; productRef = FBDB71ED2A9C2F7000EC9F38 /* KakaoSDK */; };
+		FBDB71F22A9C33CC00EC9F38 /* DataModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDB71F12A9C33CC00EC9F38 /* DataModels.swift */; };
+		FBDB71F42A9C33D500EC9F38 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDB71F32A9C33D500EC9F38 /* Constants.swift */; };
+		FBDB71FA2A9C346F00EC9F38 /* SFT_VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDB71F92A9C346F00EC9F38 /* SFT_VC.swift */; };
+		FBDB71FC2A9C347500EC9F38 /* SFT_View.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDB71FB2A9C347500EC9F38 /* SFT_View.swift */; };
+		FBDB72002A9C351900EC9F38 /* AppleSignManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDB71FF2A9C351900EC9F38 /* AppleSignManager.swift */; };
+		FBDB72022A9C354500EC9F38 /* CommonUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDB72012A9C354500EC9F38 /* CommonUtils.swift */; };
+		FBDB72052A9C3DB200EC9F38 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDB72032A9C3DB200EC9F38 /* MainViewController.swift */; };
+		FBDB72062A9C3DB200EC9F38 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FBDB72042A9C3DB200EC9F38 /* MainViewController.xib */; };
+		FBDB720A2A9C55AD00EC9F38 /* SignTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDB72082A9C55AD00EC9F38 /* SignTestViewController.swift */; };
+		FBDB720B2A9C55AD00EC9F38 /* SignTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FBDB72092A9C55AD00EC9F38 /* SignTestViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		FBDB71CD2A9C263400EC9F38 /* SomeFuncTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SomeFuncTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBDB71D02A9C263400EC9F38 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FBDB71D22A9C263400EC9F38 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FBDB71D42A9C263400EC9F38 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FBDB71D92A9C263600EC9F38 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FBDB71DC2A9C263600EC9F38 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FBDB71DE2A9C263600EC9F38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FBDB71E42A9C268100EC9F38 /* Information.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Information.md; sourceTree = "<group>"; };
+		FBDB71EF2A9C300D00EC9F38 /* SomeFuncTest.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SomeFuncTest.entitlements; sourceTree = "<group>"; };
+		FBDB71F12A9C33CC00EC9F38 /* DataModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModels.swift; sourceTree = "<group>"; };
+		FBDB71F32A9C33D500EC9F38 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		FBDB71F92A9C346F00EC9F38 /* SFT_VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFT_VC.swift; sourceTree = "<group>"; };
+		FBDB71FB2A9C347500EC9F38 /* SFT_View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFT_View.swift; sourceTree = "<group>"; };
+		FBDB71FF2A9C351900EC9F38 /* AppleSignManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleSignManager.swift; sourceTree = "<group>"; };
+		FBDB72012A9C354500EC9F38 /* CommonUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonUtils.swift; sourceTree = "<group>"; };
+		FBDB72032A9C3DB200EC9F38 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		FBDB72042A9C3DB200EC9F38 /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		FBDB72082A9C55AD00EC9F38 /* SignTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignTestViewController.swift; sourceTree = "<group>"; };
+		FBDB72092A9C55AD00EC9F38 /* SignTestViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignTestViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -30,6 +52,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FBDB71E82A9C2EFE00EC9F38 /* SunBase in Frameworks */,
+				FBDB71EB2A9C2F1700EC9F38 /* SnapKit in Frameworks */,
+				FBDB71EE2A9C2F7000EC9F38 /* KakaoSDK in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,9 +81,12 @@
 		FBDB71CF2A9C263400EC9F38 /* SomeFuncTest */ = {
 			isa = PBXGroup;
 			children = (
+				FBDB71EF2A9C300D00EC9F38 /* SomeFuncTest.entitlements */,
 				FBDB71D02A9C263400EC9F38 /* AppDelegate.swift */,
 				FBDB71D22A9C263400EC9F38 /* SceneDelegate.swift */,
-				FBDB71D42A9C263400EC9F38 /* ViewController.swift */,
+				FBDB71F72A9C345100EC9F38 /* Common */,
+				FBDB71FD2A9C34EA00EC9F38 /* Func */,
+				FBDB71F02A9C331B00EC9F38 /* Scene */,
 				FBDB71D92A9C263600EC9F38 /* Assets.xcassets */,
 				FBDB71DB2A9C263600EC9F38 /* LaunchScreen.storyboard */,
 				FBDB71DE2A9C263600EC9F38 /* Info.plist */,
@@ -72,6 +100,61 @@
 				FBDB71E42A9C268100EC9F38 /* Information.md */,
 			);
 			path = Documents;
+			sourceTree = "<group>";
+		};
+		FBDB71F02A9C331B00EC9F38 /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				FBDB72032A9C3DB200EC9F38 /* MainViewController.swift */,
+				FBDB72042A9C3DB200EC9F38 /* MainViewController.xib */,
+				FBDB72072A9C553500EC9F38 /* SignTestScene */,
+			);
+			path = Scene;
+			sourceTree = "<group>";
+		};
+		FBDB71F72A9C345100EC9F38 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				FBDB71F82A9C345B00EC9F38 /* RootScene */,
+				FBDB71F12A9C33CC00EC9F38 /* DataModels.swift */,
+				FBDB71F32A9C33D500EC9F38 /* Constants.swift */,
+				FBDB72012A9C354500EC9F38 /* CommonUtils.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		FBDB71F82A9C345B00EC9F38 /* RootScene */ = {
+			isa = PBXGroup;
+			children = (
+				FBDB71F92A9C346F00EC9F38 /* SFT_VC.swift */,
+				FBDB71FB2A9C347500EC9F38 /* SFT_View.swift */,
+			);
+			path = RootScene;
+			sourceTree = "<group>";
+		};
+		FBDB71FD2A9C34EA00EC9F38 /* Func */ = {
+			isa = PBXGroup;
+			children = (
+				FBDB71FE2A9C34F700EC9F38 /* Account */,
+			);
+			path = Func;
+			sourceTree = "<group>";
+		};
+		FBDB71FE2A9C34F700EC9F38 /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				FBDB71FF2A9C351900EC9F38 /* AppleSignManager.swift */,
+			);
+			path = Account;
+			sourceTree = "<group>";
+		};
+		FBDB72072A9C553500EC9F38 /* SignTestScene */ = {
+			isa = PBXGroup;
+			children = (
+				FBDB72082A9C55AD00EC9F38 /* SignTestViewController.swift */,
+				FBDB72092A9C55AD00EC9F38 /* SignTestViewController.xib */,
+			);
+			path = SignTestScene;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -90,6 +173,11 @@
 			dependencies = (
 			);
 			name = SomeFuncTest;
+			packageProductDependencies = (
+				FBDB71E72A9C2EFE00EC9F38 /* SunBase */,
+				FBDB71EA2A9C2F1700EC9F38 /* SnapKit */,
+				FBDB71ED2A9C2F7000EC9F38 /* KakaoSDK */,
+			);
 			productName = SomeFuncTest;
 			productReference = FBDB71CD2A9C263400EC9F38 /* SomeFuncTest.app */;
 			productType = "com.apple.product-type.application";
@@ -118,6 +206,11 @@
 				Base,
 			);
 			mainGroup = FBDB71C42A9C263400EC9F38;
+			packageReferences = (
+				FBDB71E62A9C2EFE00EC9F38 /* XCRemoteSwiftPackageReference "SunBase" */,
+				FBDB71E92A9C2F1700EC9F38 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				FBDB71EC2A9C2F7000EC9F38 /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */,
+			);
 			productRefGroup = FBDB71CE2A9C263400EC9F38 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -133,7 +226,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				FBDB71DD2A9C263600EC9F38 /* LaunchScreen.storyboard in Resources */,
+				FBDB72062A9C3DB200EC9F38 /* MainViewController.xib in Resources */,
 				FBDB71DA2A9C263600EC9F38 /* Assets.xcassets in Resources */,
+				FBDB720B2A9C55AD00EC9F38 /* SignTestViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,9 +239,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FBDB71D52A9C263400EC9F38 /* ViewController.swift in Sources */,
+				FBDB71FA2A9C346F00EC9F38 /* SFT_VC.swift in Sources */,
+				FBDB71F22A9C33CC00EC9F38 /* DataModels.swift in Sources */,
+				FBDB71F42A9C33D500EC9F38 /* Constants.swift in Sources */,
+				FBDB71FC2A9C347500EC9F38 /* SFT_View.swift in Sources */,
 				FBDB71D12A9C263400EC9F38 /* AppDelegate.swift in Sources */,
 				FBDB71D32A9C263400EC9F38 /* SceneDelegate.swift in Sources */,
+				FBDB72052A9C3DB200EC9F38 /* MainViewController.swift in Sources */,
+				FBDB72022A9C354500EC9F38 /* CommonUtils.swift in Sources */,
+				FBDB72002A9C351900EC9F38 /* AppleSignManager.swift in Sources */,
+				FBDB720A2A9C55AD00EC9F38 /* SignTestViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -214,7 +316,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -268,7 +370,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -283,6 +385,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SomeFuncTest/SomeFuncTest.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 45MYH7ZHUQ;
@@ -315,6 +418,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SomeFuncTest/SomeFuncTest.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 45MYH7ZHUQ;
@@ -364,6 +468,51 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FBDB71E62A9C2EFE00EC9F38 /* XCRemoteSwiftPackageReference "SunBase" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SEAN-59/SunBase";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		FBDB71E92A9C2F1700EC9F38 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		FBDB71EC2A9C2F7000EC9F38 /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kakao/kakao-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FBDB71E72A9C2EFE00EC9F38 /* SunBase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FBDB71E62A9C2EFE00EC9F38 /* XCRemoteSwiftPackageReference "SunBase" */;
+			productName = SunBase;
+		};
+		FBDB71EA2A9C2F1700EC9F38 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FBDB71E92A9C2F1700EC9F38 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		FBDB71ED2A9C2F7000EC9F38 /* KakaoSDK */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FBDB71EC2A9C2F7000EC9F38 /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */;
+			productName = KakaoSDK;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = FBDB71C52A9C263400EC9F38 /* Project object */;
 }

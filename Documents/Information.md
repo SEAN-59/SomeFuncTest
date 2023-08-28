@@ -10,6 +10,7 @@
     ## 2. FireBase - SPM: https://console.firebase.google.com/u/0/?hl=ko
     ## 3. KakaoSDK - SPM: https://developers.kakao.com/docs/latest/ko/kakaologin/ios
     ## 4. NaverSDK - cocoaPod: https://developers.naver.com/docs/login/ios/ios.md
+        ### PodFile: pod 'naveridlogin-sdk-ios'
     ## 5. SnapKit - SPM: https://github.com/SnapKit/SnapKit
     
 # Plan
@@ -37,3 +38,6 @@
         #### 6. Number (opt)
         
     ##
+    
+    
+45MYH7ZHUQ (Team ID)
