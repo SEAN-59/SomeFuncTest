@@ -13,6 +13,7 @@ import AuthenticationServices
 class AppleSignManager: NSObject {
     
     weak var delegate: LoginSuccessDelegate?
+    var useVC: SFT_VC?
     
     var mainView = UIView()
     
@@ -42,14 +43,11 @@ class AppleSignManager: NSObject {
                     switch credentialState {
                     case .revoked:
                         print("APPLE ID 연동해제 상태")
-                        CommonUtils.shared.saveUDData("", forKey: "appleID")
-                        CommonUtils.shared.saveUDData("", forKey: "appleEmail")
-                        CommonUtils.shared.saveUDData("", forKey: "appleToken")
+                        self.cleanAppleUDData()
+                        self.delegate?.NotificationLoginStatus(type: .apple, staus: .notConnect)
                     case .authorized:
                         print("APPLE ID 로그인 중인 상태 - 연동해제 시도")
-                        CommonUtils.shared.saveUDData("", forKey: "appleID")
-                        CommonUtils.shared.saveUDData("", forKey: "appleEmail")
-                        CommonUtils.shared.saveUDData("", forKey: "appleToken")
+                        self.cleanAppleUDData()
                     case .notFound:
                         print("APPLE ID 상태를 확인 할 수 없음")
                     case .transferred:
@@ -62,8 +60,21 @@ class AppleSignManager: NSObject {
         }
         else {
             // ID 존재 안함 == 로그인 안한거
+            if let useVC = self.useVC {
+                SunBase.alert.alertOneBtn(useVC,
+                                          title: "로그인 에러",
+                                          message: "로그인이 되어있지 않습니다.",
+                                          firstTitle: "확인",
+                                          firstHandler: nil)
+            }
             
         }
+    }
+    
+    private func cleanAppleUDData() {
+        CommonUtils.shared.saveUDData("", forKey: "appleID")
+        CommonUtils.shared.saveUDData("", forKey: "appleEmail")
+        CommonUtils.shared.saveUDData("", forKey: "appleToken")
     }
 }
     

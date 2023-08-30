@@ -11,10 +11,10 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SignTestViewController" customModule="SomeFuncTest" customModuleProvider="target">
             <connections>
-                <outlet property="appleState" destination="zuH-DI-SlN" id="EBw-2p-FM6"/>
-                <outlet property="googleState" destination="3SE-dV-kne" id="hPg-ty-y3v"/>
-                <outlet property="kakaoState" destination="2q2-8j-xhP" id="xAZ-mp-ATQ"/>
-                <outlet property="naverState" destination="Yhz-N7-oJ1" id="gju-IY-GdT"/>
+                <outlet property="appleStateLbl" destination="zuH-DI-SlN" id="boX-1M-osM"/>
+                <outlet property="googleStateLbl" destination="3SE-dV-kne" id="X8P-DZ-Axz"/>
+                <outlet property="kakaoStateLbl" destination="2q2-8j-xhP" id="6j5-bL-YzE"/>
+                <outlet property="naverStateLbl" destination="Yhz-N7-oJ1" id="9Wg-HA-jHm"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>

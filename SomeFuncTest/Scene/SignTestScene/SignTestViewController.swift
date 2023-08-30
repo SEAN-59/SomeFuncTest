@@ -8,48 +8,60 @@
 import UIKit
 import SunBase
 
-struct SNSAccount {
-    var snsId, snsToken, snsEmail: String
-    
-    init(snsId: String = "", snsToken: String = "", snsEmail: String = "") {
-        self.snsId = snsId
-        self.snsToken = snsToken
-        self.snsEmail = snsEmail
-    }
-}
-
-enum AccountButtonType: Int {
-    case signIn = 0
-    case signOut
-    case revoke
-}
-
-enum AccountError: Error {
-    case signinError
-    case signOutError
-    case revokeError
-}
-
 
 class SignTestViewController: SFT_VC{
     let appleManager = AppleSignManager()
     
-    @IBOutlet weak var appleState: UILabel!
-    @IBOutlet weak var kakaoState: UILabel!
-    @IBOutlet weak var naverState: UILabel!
-    @IBOutlet weak var googleState: UILabel!
+    @IBOutlet weak var appleStateLbl: UILabel!
+    @IBOutlet weak var kakaoStateLbl: UILabel!
+    @IBOutlet weak var naverStateLbl: UILabel!
+    @IBOutlet weak var googleStateLbl: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.appleManager.delegate = self
+        self.appleManager.useVC = self
     }
 }
 
 // MARK: - LoginSuccessDelegate func() Collection
 extension SignTestViewController: LoginSuccessDelegate {}
 extension SignTestViewController {
-    
+    func NotificationLoginStatus(type: LoginType, staus: LoginStatus) {
+        switch staus {
+        case .connect:
+            switch type {
+            case .apple:
+                self.appleStateLbl.text = "ON"
+            case .kakao:
+                self.kakaoStateLbl.text = "ON"
+            case .naver:
+                self.naverStateLbl.text = "ON"
+            case .google:
+                self.googleStateLbl.text = "ON"
+            }
+        case .notConnect:
+            switch type {
+            case .apple:
+                self.appleStateLbl.text = "OFF"
+            case .kakao:
+                self.kakaoStateLbl.text = "OFF"
+            case .naver:
+                self.naverStateLbl.text = "OFF"
+            case .google:
+                self.googleStateLbl.text = "OFF"
+            }
+        }
+    }
 }
+// APPLE
+extension SignTestViewController {}
+// KAKAO
+extension SignTestViewController {}
+// NAVER
+extension SignTestViewController {}
+// GOOGLE
+extension SignTestViewController {}
 
 // MARK: - IBAction func() Collection
 private extension SignTestViewController {

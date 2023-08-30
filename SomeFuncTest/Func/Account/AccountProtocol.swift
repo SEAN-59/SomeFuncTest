@@ -23,6 +23,8 @@ protocol LoginSuccessDelegate: AnyObject {
     func googleSignInSuccess()
     func googleSignOutSuccess()
     func googleRevokeSuccess()
+    
+    func NotificationLoginStatus(type: LoginType,staus: LoginStatus)
 }
 extension LoginSuccessDelegate {
     func appleSignInSuccess() {}

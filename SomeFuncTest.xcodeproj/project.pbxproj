@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FB33AF512A9F364900DA0D66 /* AccountData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB33AF502A9F364900DA0D66 /* AccountData.swift */; };
 		FB688C702A9DEF2300DE84AC /* AccountProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB688C6F2A9DEF2300DE84AC /* AccountProtocol.swift */; };
 		FBDB71D12A9C263400EC9F38 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDB71D02A9C263400EC9F38 /* AppDelegate.swift */; };
 		FBDB71D32A9C263400EC9F38 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDB71D22A9C263400EC9F38 /* SceneDelegate.swift */; };
@@ -28,6 +29,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FB33AF502A9F364900DA0D66 /* AccountData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountData.swift; sourceTree = "<group>"; };
 		FB688C6F2A9DEF2300DE84AC /* AccountProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountProtocol.swift; sourceTree = "<group>"; };
 		FBDB71CD2A9C263400EC9F38 /* SomeFuncTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SomeFuncTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBDB71D02A9C263400EC9F38 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -145,8 +147,9 @@
 		FBDB71FE2A9C34F700EC9F38 /* Account */ = {
 			isa = PBXGroup;
 			children = (
-				FBDB71FF2A9C351900EC9F38 /* AppleSignManager.swift */,
 				FB688C6F2A9DEF2300DE84AC /* AccountProtocol.swift */,
+				FBDB71FF2A9C351900EC9F38 /* AppleSignManager.swift */,
+				FB33AF502A9F364900DA0D66 /* AccountData.swift */,
 			);
 			path = Account;
 			sourceTree = "<group>";
@@ -246,6 +249,7 @@
 				FBDB71F22A9C33CC00EC9F38 /* DataModels.swift in Sources */,
 				FBDB71F42A9C33D500EC9F38 /* Constants.swift in Sources */,
 				FBDB71FC2A9C347500EC9F38 /* SFT_View.swift in Sources */,
+				FB33AF512A9F364900DA0D66 /* AccountData.swift in Sources */,
 				FBDB71D12A9C263400EC9F38 /* AppDelegate.swift in Sources */,
 				FBDB71D32A9C263400EC9F38 /* SceneDelegate.swift in Sources */,
 				FB688C702A9DEF2300DE84AC /* AccountProtocol.swift in Sources */,
