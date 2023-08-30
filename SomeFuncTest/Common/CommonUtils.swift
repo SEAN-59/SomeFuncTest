@@ -17,9 +17,18 @@ class CommonUtils: NSObject {
 // MARK: - 변수 선언부
     private let ud = UserDefaults.standard
 
+// MARK: - UD 관련
+    public func saveUDData(_ value: String, forKey: String) {
+        self.ud.setValue("\(value)", forKey: "\(forKey)")
+        self.ud.synchronize()
+    }
+    
+    public func readUDData(forKey: String) -> String?{
+        guard let data = self.ud.object(forKey: forKey) as? String else { return nil}
+        return data
+    }
+    
 // MARK: -
-    
-    
     
 } // CLASS END
 

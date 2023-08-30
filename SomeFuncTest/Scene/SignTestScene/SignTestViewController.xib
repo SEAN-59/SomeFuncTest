@@ -11,6 +11,10 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SignTestViewController" customModule="SomeFuncTest" customModuleProvider="target">
             <connections>
+                <outlet property="appleState" destination="zuH-DI-SlN" id="EBw-2p-FM6"/>
+                <outlet property="googleState" destination="3SE-dV-kne" id="hPg-ty-y3v"/>
+                <outlet property="kakaoState" destination="2q2-8j-xhP" id="xAZ-mp-ATQ"/>
+                <outlet property="naverState" destination="Yhz-N7-oJ1" id="gju-IY-GdT"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -22,39 +26,328 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bgn-26-wcm">
                     <rect key="frame" x="0.0" y="59" width="393" height="759"/>
                     <subviews>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="로그인" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EVg-zX-M3F">
-                            <rect key="frame" x="131.66666666666666" y="20" width="129.99999999999997" height="60"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="50"/>
-                            <nil key="textColor"/>
-                            <nil key="highlightedColor"/>
-                        </label>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="maj-sO-QlY">
-                            <rect key="frame" x="20" y="120" width="353" height="558"/>
+                            <rect key="frame" x="20" y="80" width="353" height="598.66666666666663"/>
                             <subviews>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bi7-jr-8K0" customClass="SunButton" customModule="SunBase">
-                                    <rect key="frame" x="120.66666666666666" y="10" width="111.66666666666666" height="56"/>
-                                    <state key="normal" title="Button"/>
-                                    <buttonConfiguration key="configuration" style="plain" title="Apple">
-                                        <fontDescription key="titleFontDescription" type="system" pointSize="35"/>
-                                        <color key="baseForegroundColor" red="0.0" green="0.60392156860000001" blue="0.57647058819999997" alpha="1" colorSpace="calibratedRGB"/>
-                                    </buttonConfiguration>
-                                    <userDefinedRuntimeAttributes>
-                                        <userDefinedRuntimeAttribute type="boolean" keyPath="animateBig" value="YES"/>
-                                    </userDefinedRuntimeAttributes>
-                                    <connections>
-                                        <action selector="tapAppleSinginBtn:" destination="-1" eventType="touchUpInside" id="hVl-Ua-J3I"/>
-                                    </connections>
-                                </button>
+                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Bo4-my-Sct">
+                                    <rect key="frame" x="0.0" y="10" width="353" height="24"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="종류" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EVg-zX-M3F">
+                                            <rect key="frame" x="0.0" y="0.0" width="70.666666666666671" height="24"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="로그인" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ykK-Eo-9EZ">
+                                            <rect key="frame" x="70.666666666666657" y="0.0" width="70.666666666666657" height="24"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="아웃" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vAf-RU-Ad3">
+                                            <rect key="frame" x="141.33333333333334" y="0.0" width="70.333333333333343" height="24"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="끊기" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zhk-jz-RTT">
+                                            <rect key="frame" x="211.66666666666666" y="0.0" width="70.666666666666657" height="24"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="상태" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G0W-8q-aNf">
+                                            <rect key="frame" x="282.33333333333331" y="0.0" width="70.666666666666686" height="24"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </stackView>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mSx-1b-gvO" userLabel="SeparateView">
+                                    <rect key="frame" x="0.0" y="44" width="353" height="2"/>
+                                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="2" id="qtU-ci-VGn"/>
+                                    </constraints>
+                                </view>
+                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="egF-Wg-55s" userLabel="KakaoBtnStack">
+                                    <rect key="frame" x="0.0" y="110" width="353" height="44"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kakao" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Vk-L5-Ge9">
+                                            <rect key="frame" x="0.0" y="0.0" width="70.666666666666671" height="44"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vbd-hU-iib" userLabel="SignIn" customClass="SunButton" customModule="SunBase">
+                                            <rect key="frame" x="70.666666666666657" y="0.0" width="70.666666666666657" height="44"/>
+                                            <state key="normal" title="Button"/>
+                                            <buttonConfiguration key="configuration" style="plain" title="Tap">
+                                                <fontDescription key="titleFontDescription" type="system" pointSize="25"/>
+                                                <color key="baseForegroundColor" red="0.0" green="0.60392156860000001" blue="0.57647058819999997" alpha="1" colorSpace="calibratedRGB"/>
+                                            </buttonConfiguration>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="boolean" keyPath="animateBig" value="YES"/>
+                                            </userDefinedRuntimeAttributes>
+                                            <connections>
+                                                <action selector="tapAppleBtn:" destination="-1" eventType="touchUpInside" id="StU-4p-E1S"/>
+                                                <action selector="tapKakaoBtn:" destination="-1" eventType="touchUpInside" id="qDq-F2-82M"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tZM-X1-nLJ" userLabel="SignOut" customClass="SunButton" customModule="SunBase">
+                                            <rect key="frame" x="141.33333333333334" y="0.0" width="70.333333333333343" height="44"/>
+                                            <state key="normal" title="Button"/>
+                                            <buttonConfiguration key="configuration" style="plain" title="Tap">
+                                                <fontDescription key="titleFontDescription" type="system" pointSize="25"/>
+                                                <color key="baseForegroundColor" red="0.0" green="0.60392156860000001" blue="0.57647058819999997" alpha="1" colorSpace="calibratedRGB"/>
+                                            </buttonConfiguration>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="boolean" keyPath="animateBig" value="YES"/>
+                                            </userDefinedRuntimeAttributes>
+                                            <connections>
+                                                <action selector="tapAppleBtn:" destination="-1" eventType="touchUpInside" id="s86-Za-EAj"/>
+                                                <action selector="tapKakaoBtn:" destination="-1" eventType="touchUpInside" id="tar-Wn-67c"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yGo-1i-Jb2" userLabel="DeConnect" customClass="SunButton" customModule="SunBase">
+                                            <rect key="frame" x="211.66666666666666" y="0.0" width="70.666666666666657" height="44"/>
+                                            <state key="normal" title="Button"/>
+                                            <buttonConfiguration key="configuration" style="plain" title="Tap">
+                                                <fontDescription key="titleFontDescription" type="system" pointSize="25"/>
+                                                <color key="baseForegroundColor" red="0.0" green="0.60392156860000001" blue="0.57647058819999997" alpha="1" colorSpace="calibratedRGB"/>
+                                            </buttonConfiguration>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="boolean" keyPath="animateBig" value="YES"/>
+                                            </userDefinedRuntimeAttributes>
+                                            <connections>
+                                                <action selector="tapAppleBtn:" destination="-1" eventType="touchUpInside" id="aKO-s0-b7a"/>
+                                                <action selector="tapKakaoBtn:" destination="-1" eventType="touchUpInside" id="DfI-aq-ge1"/>
+                                            </connections>
+                                        </button>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OFF" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2q2-8j-xhP">
+                                            <rect key="frame" x="282.33333333333331" y="0.0" width="70.666666666666686" height="44"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </stackView>
+                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="hq2-tf-Uzf" userLabel="NaverBtnStack">
+                                    <rect key="frame" x="0.0" y="164" width="353" height="44"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Naver" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7qo-hM-kD0">
+                                            <rect key="frame" x="0.0" y="0.0" width="70.666666666666671" height="44"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h9D-ZT-ASK" userLabel="SignIn" customClass="SunButton" customModule="SunBase">
+                                            <rect key="frame" x="70.666666666666657" y="0.0" width="70.666666666666657" height="44"/>
+                                            <state key="normal" title="Button"/>
+                                            <buttonConfiguration key="configuration" style="plain" title="Tap">
+                                                <fontDescription key="titleFontDescription" type="system" pointSize="25"/>
+                                                <color key="baseForegroundColor" red="0.0" green="0.60392156860000001" blue="0.57647058819999997" alpha="1" colorSpace="calibratedRGB"/>
+                                            </buttonConfiguration>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="boolean" keyPath="animateBig" value="YES"/>
+                                            </userDefinedRuntimeAttributes>
+                                            <connections>
+                                                <action selector="tapAppleBtn:" destination="-1" eventType="touchUpInside" id="GYg-ir-2b3"/>
+                                                <action selector="tapNaverBtn:" destination="-1" eventType="touchUpInside" id="thM-BE-MC2"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vnJ-hF-ux8" userLabel="SignOut" customClass="SunButton" customModule="SunBase">
+                                            <rect key="frame" x="141.33333333333334" y="0.0" width="70.333333333333343" height="44"/>
+                                            <state key="normal" title="Button"/>
+                                            <buttonConfiguration key="configuration" style="plain" title="Tap">
+                                                <fontDescription key="titleFontDescription" type="system" pointSize="25"/>
+                                                <color key="baseForegroundColor" red="0.0" green="0.60392156860000001" blue="0.57647058819999997" alpha="1" colorSpace="calibratedRGB"/>
+                                            </buttonConfiguration>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="boolean" keyPath="animateBig" value="YES"/>
+                                            </userDefinedRuntimeAttributes>
+                                            <connections>
+                                                <action selector="tapAppleBtn:" destination="-1" eventType="touchUpInside" id="UDS-lv-e5R"/>
+                                                <action selector="tapNaverBtn:" destination="-1" eventType="touchUpInside" id="igu-yi-sUZ"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vih-FM-dvW" userLabel="DeConnect" customClass="SunButton" customModule="SunBase">
+                                            <rect key="frame" x="211.66666666666666" y="0.0" width="70.666666666666657" height="44"/>
+                                            <state key="normal" title="Button"/>
+                                            <buttonConfiguration key="configuration" style="plain" title="Tap">
+                                                <fontDescription key="titleFontDescription" type="system" pointSize="25"/>
+                                                <color key="baseForegroundColor" red="0.0" green="0.60392156860000001" blue="0.57647058819999997" alpha="1" colorSpace="calibratedRGB"/>
+                                            </buttonConfiguration>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="boolean" keyPath="animateBig" value="YES"/>
+                                            </userDefinedRuntimeAttributes>
+                                            <connections>
+                                                <action selector="tapAppleBtn:" destination="-1" eventType="touchUpInside" id="2d0-Yz-87o"/>
+                                                <action selector="tapNaverBtn:" destination="-1" eventType="touchUpInside" id="0dL-0i-Kg5"/>
+                                            </connections>
+                                        </button>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OFF" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yhz-N7-oJ1">
+                                            <rect key="frame" x="282.33333333333331" y="0.0" width="70.666666666666686" height="44"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </stackView>
+                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="54q-TM-6Ze" userLabel="GoogleBtnStack">
+                                    <rect key="frame" x="0.0" y="218" width="353" height="44"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Google" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Dc-CB-Cep">
+                                            <rect key="frame" x="0.0" y="0.0" width="70.666666666666671" height="44"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jPO-1d-MOa" userLabel="SignIn" customClass="SunButton" customModule="SunBase">
+                                            <rect key="frame" x="70.666666666666657" y="0.0" width="70.666666666666657" height="44"/>
+                                            <state key="normal" title="Button"/>
+                                            <buttonConfiguration key="configuration" style="plain" title="Tap">
+                                                <fontDescription key="titleFontDescription" type="system" pointSize="25"/>
+                                                <color key="baseForegroundColor" red="0.0" green="0.60392156860000001" blue="0.57647058819999997" alpha="1" colorSpace="calibratedRGB"/>
+                                            </buttonConfiguration>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="boolean" keyPath="animateBig" value="YES"/>
+                                            </userDefinedRuntimeAttributes>
+                                            <connections>
+                                                <action selector="tapAppleBtn:" destination="-1" eventType="touchUpInside" id="baU-L9-xm7"/>
+                                                <action selector="tapGoogleBtn:" destination="-1" eventType="touchUpInside" id="RsO-Nd-vZV"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oiT-5a-dBp" userLabel="SignOut" customClass="SunButton" customModule="SunBase">
+                                            <rect key="frame" x="141.33333333333334" y="0.0" width="70.333333333333343" height="44"/>
+                                            <state key="normal" title="Button"/>
+                                            <buttonConfiguration key="configuration" style="plain" title="Tap">
+                                                <fontDescription key="titleFontDescription" type="system" pointSize="25"/>
+                                                <color key="baseForegroundColor" red="0.0" green="0.60392156860000001" blue="0.57647058819999997" alpha="1" colorSpace="calibratedRGB"/>
+                                            </buttonConfiguration>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="boolean" keyPath="animateBig" value="YES"/>
+                                            </userDefinedRuntimeAttributes>
+                                            <connections>
+                                                <action selector="tapAppleBtn:" destination="-1" eventType="touchUpInside" id="iMR-Gt-rab"/>
+                                                <action selector="tapGoogleBtn:" destination="-1" eventType="touchUpInside" id="koz-Wo-VMH"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IRF-op-STm" userLabel="DeConnect" customClass="SunButton" customModule="SunBase">
+                                            <rect key="frame" x="211.66666666666666" y="0.0" width="70.666666666666657" height="44"/>
+                                            <state key="normal" title="Button"/>
+                                            <buttonConfiguration key="configuration" style="plain" title="Tap">
+                                                <fontDescription key="titleFontDescription" type="system" pointSize="25"/>
+                                                <color key="baseForegroundColor" red="0.0" green="0.60392156860000001" blue="0.57647058819999997" alpha="1" colorSpace="calibratedRGB"/>
+                                            </buttonConfiguration>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="boolean" keyPath="animateBig" value="YES"/>
+                                            </userDefinedRuntimeAttributes>
+                                            <connections>
+                                                <action selector="tapAppleBtn:" destination="-1" eventType="touchUpInside" id="ISE-j6-olU"/>
+                                                <action selector="tapGoogleBtn:" destination="-1" eventType="touchUpInside" id="Abm-46-M9W"/>
+                                            </connections>
+                                        </button>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OFF" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3SE-dV-kne">
+                                            <rect key="frame" x="282.33333333333331" y="0.0" width="70.666666666666686" height="44"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </stackView>
+                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="9UF-Xh-2XY" userLabel="AppleBtnStack">
+                                    <rect key="frame" x="0.0" y="56" width="353" height="44"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Apple" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J7b-Wz-9nw">
+                                            <rect key="frame" x="0.0" y="0.0" width="70.666666666666671" height="44"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bi7-jr-8K0" userLabel="SignIn" customClass="SunButton" customModule="SunBase">
+                                            <rect key="frame" x="70.666666666666657" y="0.0" width="70.666666666666657" height="44"/>
+                                            <state key="normal" title="Button"/>
+                                            <buttonConfiguration key="configuration" style="plain" title="Tap">
+                                                <fontDescription key="titleFontDescription" type="system" pointSize="25"/>
+                                                <color key="baseForegroundColor" red="0.0" green="0.60392156860000001" blue="0.57647058819999997" alpha="1" colorSpace="calibratedRGB"/>
+                                            </buttonConfiguration>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="boolean" keyPath="animateBig" value="YES"/>
+                                            </userDefinedRuntimeAttributes>
+                                            <connections>
+                                                <action selector="tapAppleBtn:" destination="-1" eventType="touchUpInside" id="uD7-Fy-P5P"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H1X-iy-avd" userLabel="SignOut" customClass="SunButton" customModule="SunBase">
+                                            <rect key="frame" x="141.33333333333334" y="0.0" width="70.333333333333343" height="44"/>
+                                            <state key="normal" title="Button"/>
+                                            <buttonConfiguration key="configuration" style="plain" title="Tap">
+                                                <fontDescription key="titleFontDescription" type="system" pointSize="25"/>
+                                                <color key="baseForegroundColor" red="0.0" green="0.60392156860000001" blue="0.57647058819999997" alpha="1" colorSpace="calibratedRGB"/>
+                                            </buttonConfiguration>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="boolean" keyPath="animateBig" value="YES"/>
+                                            </userDefinedRuntimeAttributes>
+                                            <connections>
+                                                <action selector="tapAppleBtn:" destination="-1" eventType="touchUpInside" id="rgM-0S-dcl"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="obq-fa-6ht" userLabel="DeConnect" customClass="SunButton" customModule="SunBase">
+                                            <rect key="frame" x="211.66666666666666" y="0.0" width="70.666666666666657" height="44"/>
+                                            <state key="normal" title="Button"/>
+                                            <buttonConfiguration key="configuration" style="plain" title="Tap">
+                                                <fontDescription key="titleFontDescription" type="system" pointSize="25"/>
+                                                <color key="baseForegroundColor" red="0.0" green="0.60392156860000001" blue="0.57647058819999997" alpha="1" colorSpace="calibratedRGB"/>
+                                            </buttonConfiguration>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="boolean" keyPath="animateBig" value="YES"/>
+                                            </userDefinedRuntimeAttributes>
+                                            <connections>
+                                                <action selector="tapAppleBtn:" destination="-1" eventType="touchUpInside" id="9mC-dc-vwC"/>
+                                            </connections>
+                                        </button>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OFF" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zuH-DI-SlN">
+                                            <rect key="frame" x="282.33333333333331" y="0.0" width="70.666666666666686" height="44"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </stackView>
                             </subviews>
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             <constraints>
-                                <constraint firstItem="Bi7-jr-8K0" firstAttribute="centerX" secondItem="maj-sO-QlY" secondAttribute="centerX" id="A3Y-us-VY6"/>
-                                <constraint firstItem="Bi7-jr-8K0" firstAttribute="top" secondItem="maj-sO-QlY" secondAttribute="top" constant="10" id="bSa-op-4iI"/>
+                                <constraint firstAttribute="trailing" secondItem="Bo4-my-Sct" secondAttribute="trailing" id="2LI-Vj-17U"/>
+                                <constraint firstItem="mSx-1b-gvO" firstAttribute="leading" secondItem="Bo4-my-Sct" secondAttribute="leading" id="3yQ-01-qEP"/>
+                                <constraint firstItem="mSx-1b-gvO" firstAttribute="top" secondItem="Bo4-my-Sct" secondAttribute="bottom" constant="10" id="4pu-YQ-Ngi"/>
+                                <constraint firstItem="54q-TM-6Ze" firstAttribute="centerX" secondItem="maj-sO-QlY" secondAttribute="centerX" id="Bqr-W6-ZGl"/>
+                                <constraint firstItem="54q-TM-6Ze" firstAttribute="leading" secondItem="Bo4-my-Sct" secondAttribute="leading" id="Fjf-CY-8n1"/>
+                                <constraint firstItem="egF-Wg-55s" firstAttribute="top" secondItem="9UF-Xh-2XY" secondAttribute="bottom" constant="10" id="GRs-m4-034"/>
+                                <constraint firstItem="9UF-Xh-2XY" firstAttribute="leading" secondItem="Bo4-my-Sct" secondAttribute="leading" id="IOu-Wh-deh"/>
+                                <constraint firstItem="egF-Wg-55s" firstAttribute="leading" secondItem="Bo4-my-Sct" secondAttribute="leading" id="OCx-Ev-HcT"/>
+                                <constraint firstItem="Bo4-my-Sct" firstAttribute="top" secondItem="maj-sO-QlY" secondAttribute="top" constant="10" id="UTh-nN-uW6"/>
+                                <constraint firstItem="hq2-tf-Uzf" firstAttribute="centerX" secondItem="maj-sO-QlY" secondAttribute="centerX" id="V02-Fb-rdb"/>
+                                <constraint firstItem="Bo4-my-Sct" firstAttribute="centerX" secondItem="maj-sO-QlY" secondAttribute="centerX" id="WY5-KG-1ug"/>
+                                <constraint firstItem="9UF-Xh-2XY" firstAttribute="top" secondItem="mSx-1b-gvO" secondAttribute="bottom" constant="10" id="WaG-rv-5fo"/>
+                                <constraint firstItem="mSx-1b-gvO" firstAttribute="centerX" secondItem="maj-sO-QlY" secondAttribute="centerX" id="ZmT-zy-vTI"/>
+                                <constraint firstItem="54q-TM-6Ze" firstAttribute="top" secondItem="hq2-tf-Uzf" secondAttribute="bottom" constant="10" id="bpr-g7-qj2"/>
+                                <constraint firstItem="9UF-Xh-2XY" firstAttribute="centerX" secondItem="maj-sO-QlY" secondAttribute="centerX" id="dr1-9U-6Kp"/>
+                                <constraint firstItem="hq2-tf-Uzf" firstAttribute="top" secondItem="egF-Wg-55s" secondAttribute="bottom" constant="10" id="hXu-IX-Utr"/>
+                                <constraint firstItem="hq2-tf-Uzf" firstAttribute="leading" secondItem="Bo4-my-Sct" secondAttribute="leading" id="oEg-1p-e6E"/>
+                                <constraint firstItem="egF-Wg-55s" firstAttribute="centerX" secondItem="maj-sO-QlY" secondAttribute="centerX" id="vDk-HZ-fuC"/>
                             </constraints>
                         </view>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="made by Sean" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J12-Fv-Sw8">
-                            <rect key="frame" x="142.66666666666666" y="718" width="108" height="21"/>
+                            <rect key="frame" x="142.66666666666666" y="718.66666666666663" width="108" height="20.333333333333371"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="기능" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ngm-6k-sM6">
+                            <rect key="frame" x="153.33333333333334" y="10" width="86.666666666666657" height="60"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="50"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
@@ -63,12 +356,12 @@
                     <constraints>
                         <constraint firstItem="maj-sO-QlY" firstAttribute="leading" secondItem="Bgn-26-wcm" secondAttribute="leading" constant="20" id="E4v-q3-sT3"/>
                         <constraint firstAttribute="trailing" secondItem="maj-sO-QlY" secondAttribute="trailing" constant="20" id="LKm-Ik-lVA"/>
-                        <constraint firstItem="EVg-zX-M3F" firstAttribute="centerX" secondItem="Bgn-26-wcm" secondAttribute="centerX" id="SGR-xq-HT5"/>
+                        <constraint firstItem="maj-sO-QlY" firstAttribute="top" secondItem="ngm-6k-sM6" secondAttribute="bottom" constant="10" id="a7E-qe-VtQ"/>
                         <constraint firstItem="J12-Fv-Sw8" firstAttribute="centerX" secondItem="Bgn-26-wcm" secondAttribute="centerX" id="cpE-si-d7i"/>
                         <constraint firstItem="maj-sO-QlY" firstAttribute="centerX" secondItem="Bgn-26-wcm" secondAttribute="centerX" id="dkL-bu-RLN"/>
-                        <constraint firstItem="EVg-zX-M3F" firstAttribute="top" secondItem="Bgn-26-wcm" secondAttribute="top" constant="20" id="jqa-1Q-sx5"/>
-                        <constraint firstItem="maj-sO-QlY" firstAttribute="top" secondItem="EVg-zX-M3F" secondAttribute="bottom" constant="40" id="n9O-VX-8jA"/>
+                        <constraint firstItem="ngm-6k-sM6" firstAttribute="top" secondItem="Bgn-26-wcm" secondAttribute="top" constant="10" id="myg-0S-8KA"/>
                         <constraint firstItem="J12-Fv-Sw8" firstAttribute="top" secondItem="maj-sO-QlY" secondAttribute="bottom" constant="40" id="nJA-Zn-I1b"/>
+                        <constraint firstItem="ngm-6k-sM6" firstAttribute="centerX" secondItem="Bgn-26-wcm" secondAttribute="centerX" id="t8f-Td-8oc"/>
                         <constraint firstAttribute="bottom" secondItem="J12-Fv-Sw8" secondAttribute="bottom" constant="20" id="wfT-RT-lPr"/>
                     </constraints>
                 </view>
@@ -81,7 +374,7 @@
                 <constraint firstItem="Bgn-26-wcm" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="chP-qK-8Yw"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Bgn-26-wcm" secondAttribute="bottom" id="lg0-dW-NdG"/>
             </constraints>
-            <point key="canvasLocation" x="6" y="21"/>
+            <point key="canvasLocation" x="5.343511450381679" y="20.422535211267608"/>
         </view>
     </objects>
     <resources>
