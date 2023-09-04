@@ -8,6 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		FB33AF512A9F364900DA0D66 /* AccountData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB33AF502A9F364900DA0D66 /* AccountData.swift */; };
+		FB41E3CB2AA1700900322FC6 /* BioAuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB41E3C92AA1700900322FC6 /* BioAuthViewController.swift */; };
+		FB41E3CC2AA1700900322FC6 /* BioAuthViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB41E3CA2AA1700900322FC6 /* BioAuthViewController.xib */; };
+		FB41E3D12AA179A200322FC6 /* CopyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB41E3CF2AA179A200322FC6 /* CopyViewController.swift */; };
+		FB41E3D22AA179A200322FC6 /* CopyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB41E3D02AA179A200322FC6 /* CopyViewController.xib */; };
+		FB41E3DE2AA17D0200322FC6 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB41E3DA2AA17D0200322FC6 /* MainViewController.xib */; };
+		FB41E3DF2AA17D0200322FC6 /* MainVC_MenuTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB41E3DB2AA17D0200322FC6 /* MainVC_MenuTableCell.xib */; };
+		FB41E3E02AA17D0200322FC6 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB41E3DC2AA17D0200322FC6 /* MainViewController.swift */; };
+		FB41E3E12AA17D0200322FC6 /* MainVC_MenuTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB41E3DD2AA17D0200322FC6 /* MainVC_MenuTableCell.swift */; };
+		FB41E3E52AA17E0100322FC6 /* ErrorTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB41E3E32AA17E0100322FC6 /* ErrorTableCell.swift */; };
+		FB41E3E62AA17E0100322FC6 /* ErrorTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB41E3E42AA17E0100322FC6 /* ErrorTableCell.xib */; };
+		FB41E3E92AA183B800322FC6 /* BioAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB41E3E82AA183B800322FC6 /* BioAuth.swift */; };
 		FB688C702A9DEF2300DE84AC /* AccountProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB688C6F2A9DEF2300DE84AC /* AccountProtocol.swift */; };
 		FBDB71D12A9C263400EC9F38 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDB71D02A9C263400EC9F38 /* AppDelegate.swift */; };
 		FBDB71D32A9C263400EC9F38 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDB71D22A9C263400EC9F38 /* SceneDelegate.swift */; };
@@ -22,14 +33,23 @@
 		FBDB71FC2A9C347500EC9F38 /* SFT_View.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDB71FB2A9C347500EC9F38 /* SFT_View.swift */; };
 		FBDB72002A9C351900EC9F38 /* AppleSignManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDB71FF2A9C351900EC9F38 /* AppleSignManager.swift */; };
 		FBDB72022A9C354500EC9F38 /* CommonUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDB72012A9C354500EC9F38 /* CommonUtils.swift */; };
-		FBDB72052A9C3DB200EC9F38 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDB72032A9C3DB200EC9F38 /* MainViewController.swift */; };
-		FBDB72062A9C3DB200EC9F38 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FBDB72042A9C3DB200EC9F38 /* MainViewController.xib */; };
 		FBDB720A2A9C55AD00EC9F38 /* SignTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDB72082A9C55AD00EC9F38 /* SignTestViewController.swift */; };
 		FBDB720B2A9C55AD00EC9F38 /* SignTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FBDB72092A9C55AD00EC9F38 /* SignTestViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		FB33AF502A9F364900DA0D66 /* AccountData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountData.swift; sourceTree = "<group>"; };
+		FB41E3C92AA1700900322FC6 /* BioAuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BioAuthViewController.swift; sourceTree = "<group>"; };
+		FB41E3CA2AA1700900322FC6 /* BioAuthViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BioAuthViewController.xib; sourceTree = "<group>"; };
+		FB41E3CF2AA179A200322FC6 /* CopyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CopyViewController.swift; sourceTree = "<group>"; };
+		FB41E3D02AA179A200322FC6 /* CopyViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CopyViewController.xib; sourceTree = "<group>"; };
+		FB41E3DA2AA17D0200322FC6 /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		FB41E3DB2AA17D0200322FC6 /* MainVC_MenuTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainVC_MenuTableCell.xib; sourceTree = "<group>"; };
+		FB41E3DC2AA17D0200322FC6 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		FB41E3DD2AA17D0200322FC6 /* MainVC_MenuTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainVC_MenuTableCell.swift; sourceTree = "<group>"; };
+		FB41E3E32AA17E0100322FC6 /* ErrorTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorTableCell.swift; sourceTree = "<group>"; };
+		FB41E3E42AA17E0100322FC6 /* ErrorTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ErrorTableCell.xib; sourceTree = "<group>"; };
+		FB41E3E82AA183B800322FC6 /* BioAuth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BioAuth.swift; sourceTree = "<group>"; };
 		FB688C6F2A9DEF2300DE84AC /* AccountProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountProtocol.swift; sourceTree = "<group>"; };
 		FBDB71CD2A9C263400EC9F38 /* SomeFuncTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SomeFuncTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBDB71D02A9C263400EC9F38 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -45,8 +65,6 @@
 		FBDB71FB2A9C347500EC9F38 /* SFT_View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFT_View.swift; sourceTree = "<group>"; };
 		FBDB71FF2A9C351900EC9F38 /* AppleSignManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleSignManager.swift; sourceTree = "<group>"; };
 		FBDB72012A9C354500EC9F38 /* CommonUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonUtils.swift; sourceTree = "<group>"; };
-		FBDB72032A9C3DB200EC9F38 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
-		FBDB72042A9C3DB200EC9F38 /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
 		FBDB72082A9C55AD00EC9F38 /* SignTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignTestViewController.swift; sourceTree = "<group>"; };
 		FBDB72092A9C55AD00EC9F38 /* SignTestViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignTestViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -65,6 +83,52 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FB41E3C82AA16FE100322FC6 /* BioAuthScene */ = {
+			isa = PBXGroup;
+			children = (
+				FB41E3C92AA1700900322FC6 /* BioAuthViewController.swift */,
+				FB41E3CA2AA1700900322FC6 /* BioAuthViewController.xib */,
+			);
+			path = BioAuthScene;
+			sourceTree = "<group>";
+		};
+		FB41E3D32AA179A800322FC6 /* CopyScene */ = {
+			isa = PBXGroup;
+			children = (
+				FB41E3CF2AA179A200322FC6 /* CopyViewController.swift */,
+				FB41E3D02AA179A200322FC6 /* CopyViewController.xib */,
+			);
+			path = CopyScene;
+			sourceTree = "<group>";
+		};
+		FB41E3D92AA17D0200322FC6 /* MainScene */ = {
+			isa = PBXGroup;
+			children = (
+				FB41E3DC2AA17D0200322FC6 /* MainViewController.swift */,
+				FB41E3DA2AA17D0200322FC6 /* MainViewController.xib */,
+				FB41E3DD2AA17D0200322FC6 /* MainVC_MenuTableCell.swift */,
+				FB41E3DB2AA17D0200322FC6 /* MainVC_MenuTableCell.xib */,
+			);
+			path = MainScene;
+			sourceTree = "<group>";
+		};
+		FB41E3E22AA17D2B00322FC6 /* CommonScene */ = {
+			isa = PBXGroup;
+			children = (
+				FB41E3E32AA17E0100322FC6 /* ErrorTableCell.swift */,
+				FB41E3E42AA17E0100322FC6 /* ErrorTableCell.xib */,
+			);
+			path = CommonScene;
+			sourceTree = "<group>";
+		};
+		FB41E3E72AA183A900322FC6 /* BioAuth */ = {
+			isa = PBXGroup;
+			children = (
+				FB41E3E82AA183B800322FC6 /* BioAuth.swift */,
+			);
+			path = BioAuth;
+			sourceTree = "<group>";
+		};
 		FBDB71C42A9C263400EC9F38 = {
 			isa = PBXGroup;
 			children = (
@@ -88,6 +152,7 @@
 				FBDB71EF2A9C300D00EC9F38 /* SomeFuncTest.entitlements */,
 				FBDB71D02A9C263400EC9F38 /* AppDelegate.swift */,
 				FBDB71D22A9C263400EC9F38 /* SceneDelegate.swift */,
+				FB41E3D32AA179A800322FC6 /* CopyScene */,
 				FBDB71F72A9C345100EC9F38 /* Common */,
 				FBDB71FD2A9C34EA00EC9F38 /* Func */,
 				FBDB71F02A9C331B00EC9F38 /* Scene */,
@@ -109,9 +174,9 @@
 		FBDB71F02A9C331B00EC9F38 /* Scene */ = {
 			isa = PBXGroup;
 			children = (
-				FBDB72032A9C3DB200EC9F38 /* MainViewController.swift */,
-				FBDB72042A9C3DB200EC9F38 /* MainViewController.xib */,
+				FB41E3D92AA17D0200322FC6 /* MainScene */,
 				FBDB72072A9C553500EC9F38 /* SignTestScene */,
+				FB41E3C82AA16FE100322FC6 /* BioAuthScene */,
 			);
 			path = Scene;
 			sourceTree = "<group>";
@@ -119,6 +184,7 @@
 		FBDB71F72A9C345100EC9F38 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				FB41E3E22AA17D2B00322FC6 /* CommonScene */,
 				FBDB71F82A9C345B00EC9F38 /* RootScene */,
 				FBDB71F12A9C33CC00EC9F38 /* DataModels.swift */,
 				FBDB71F32A9C33D500EC9F38 /* Constants.swift */,
@@ -139,6 +205,7 @@
 		FBDB71FD2A9C34EA00EC9F38 /* Func */ = {
 			isa = PBXGroup;
 			children = (
+				FB41E3E72AA183A900322FC6 /* BioAuth */,
 				FBDB71FE2A9C34F700EC9F38 /* Account */,
 			);
 			path = Func;
@@ -232,9 +299,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				FBDB71DD2A9C263600EC9F38 /* LaunchScreen.storyboard in Resources */,
-				FBDB72062A9C3DB200EC9F38 /* MainViewController.xib in Resources */,
+				FB41E3DE2AA17D0200322FC6 /* MainViewController.xib in Resources */,
+				FB41E3CC2AA1700900322FC6 /* BioAuthViewController.xib in Resources */,
 				FBDB71DA2A9C263600EC9F38 /* Assets.xcassets in Resources */,
+				FB41E3DF2AA17D0200322FC6 /* MainVC_MenuTableCell.xib in Resources */,
+				FB41E3E62AA17E0100322FC6 /* ErrorTableCell.xib in Resources */,
 				FBDB720B2A9C55AD00EC9F38 /* SignTestViewController.xib in Resources */,
+				FB41E3D22AA179A200322FC6 /* CopyViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -246,17 +317,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				FBDB71FA2A9C346F00EC9F38 /* SFT_VC.swift in Sources */,
+				FB41E3E52AA17E0100322FC6 /* ErrorTableCell.swift in Sources */,
 				FBDB71F22A9C33CC00EC9F38 /* DataModels.swift in Sources */,
+				FB41E3E92AA183B800322FC6 /* BioAuth.swift in Sources */,
 				FBDB71F42A9C33D500EC9F38 /* Constants.swift in Sources */,
 				FBDB71FC2A9C347500EC9F38 /* SFT_View.swift in Sources */,
+				FB41E3CB2AA1700900322FC6 /* BioAuthViewController.swift in Sources */,
 				FB33AF512A9F364900DA0D66 /* AccountData.swift in Sources */,
 				FBDB71D12A9C263400EC9F38 /* AppDelegate.swift in Sources */,
+				FB41E3E02AA17D0200322FC6 /* MainViewController.swift in Sources */,
 				FBDB71D32A9C263400EC9F38 /* SceneDelegate.swift in Sources */,
 				FB688C702A9DEF2300DE84AC /* AccountProtocol.swift in Sources */,
-				FBDB72052A9C3DB200EC9F38 /* MainViewController.swift in Sources */,
 				FBDB72022A9C354500EC9F38 /* CommonUtils.swift in Sources */,
+				FB41E3D12AA179A200322FC6 /* CopyViewController.swift in Sources */,
 				FBDB72002A9C351900EC9F38 /* AppleSignManager.swift in Sources */,
 				FBDB720A2A9C55AD00EC9F38 /* SignTestViewController.swift in Sources */,
+				FB41E3E12AA17D0200322FC6 /* MainVC_MenuTableCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

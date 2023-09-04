@@ -113,5 +113,9 @@ private extension SignTestViewController {
         }
     }
     
+    @IBAction func tapBackBtn(_ sender: SunButton) {
+        self.popVC(popAnimate: false)
+    }
+    
     
 }

@@ -8,6 +8,6 @@
 import UIKit
 
 typealias VOID_TO_VOID = () -> ()
-
+//typealias zero = 0
 
 let SFT_NavigationController = UINavigationController()

@@ -4,6 +4,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -26,8 +27,48 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bgn-26-wcm">
                     <rect key="frame" x="0.0" y="59" width="393" height="759"/>
                     <subviews>
-                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="maj-sO-QlY">
-                            <rect key="frame" x="20" y="80" width="353" height="598.66666666666663"/>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lId-LC-Mum" userLabel="HeadView">
+                            <rect key="frame" x="20" y="0.0" width="353" height="60"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oM8-Nh-uKN" customClass="SunButton" customModule="SunBase">
+                                    <rect key="frame" x="20" y="14.666666666666671" width="22.333333333333329" height="31"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal">
+                                        <imageReference key="image" image="chevron.backward" catalog="system" symbolScale="large" renderingMode="hierarchical-single" variableValue="1">
+                                            <hierarchicalColors>
+                                                <color systemColor="labelColor"/>
+                                                <color systemColor="secondaryLabelColor"/>
+                                                <color systemColor="tertiaryLabelColor"/>
+                                            </hierarchicalColors>
+                                        </imageReference>
+                                        <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="24" scale="large"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="animateBig" value="YES"/>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="tapBackBtn:" destination="-1" eventType="touchUpInside" id="HA9-2r-GVb"/>
+                                    </connections>
+                                </button>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="로그인" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ngm-6k-sM6">
+                                    <rect key="frame" x="111.66666666666666" y="0.0" width="130" height="60"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="bottom" secondItem="ngm-6k-sM6" secondAttribute="bottom" id="4NE-XH-oQd"/>
+                                <constraint firstItem="oM8-Nh-uKN" firstAttribute="centerY" secondItem="ngm-6k-sM6" secondAttribute="centerY" id="7L0-8J-99K"/>
+                                <constraint firstItem="ngm-6k-sM6" firstAttribute="top" secondItem="lId-LC-Mum" secondAttribute="top" id="DRY-mB-ZRi"/>
+                                <constraint firstItem="ngm-6k-sM6" firstAttribute="centerX" secondItem="lId-LC-Mum" secondAttribute="centerX" id="QSl-Yc-2mJ"/>
+                                <constraint firstItem="oM8-Nh-uKN" firstAttribute="leading" secondItem="lId-LC-Mum" secondAttribute="leading" constant="20" id="bia-O6-MBZ"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="maj-sO-QlY" userLabel="BodyView">
+                            <rect key="frame" x="20" y="70" width="353" height="598.66666666666663"/>
                             <subviews>
                                 <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Bo4-my-Sct">
                                     <rect key="frame" x="0.0" y="10" width="353" height="24"/>
@@ -339,30 +380,37 @@
                                 <constraint firstItem="egF-Wg-55s" firstAttribute="centerX" secondItem="maj-sO-QlY" secondAttribute="centerX" id="vDk-HZ-fuC"/>
                             </constraints>
                         </view>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="made by Sean" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J12-Fv-Sw8">
-                            <rect key="frame" x="142.66666666666666" y="718.66666666666663" width="108" height="20.333333333333371"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                            <nil key="textColor"/>
-                            <nil key="highlightedColor"/>
-                        </label>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="기능" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ngm-6k-sM6">
-                            <rect key="frame" x="153.33333333333334" y="10" width="86.666666666666657" height="60"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="50"/>
-                            <nil key="textColor"/>
-                            <nil key="highlightedColor"/>
-                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pJ9-Ph-zz7" userLabel="FootView">
+                            <rect key="frame" x="20" y="678.66666666666663" width="353" height="80.333333333333371"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="made by Sean" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bpW-6y-T6f">
+                                    <rect key="frame" x="122.66666666666666" y="40" width="108" height="20.333333333333329"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstItem="bpW-6y-T6f" firstAttribute="top" secondItem="pJ9-Ph-zz7" secondAttribute="top" constant="40" id="5cY-Yn-pa2"/>
+                                <constraint firstItem="bpW-6y-T6f" firstAttribute="centerX" secondItem="pJ9-Ph-zz7" secondAttribute="centerX" id="Wvh-af-X1w"/>
+                                <constraint firstAttribute="bottom" secondItem="bpW-6y-T6f" secondAttribute="bottom" constant="20" id="Z12-K6-3be"/>
+                            </constraints>
+                        </view>
                     </subviews>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <constraints>
                         <constraint firstItem="maj-sO-QlY" firstAttribute="leading" secondItem="Bgn-26-wcm" secondAttribute="leading" constant="20" id="E4v-q3-sT3"/>
+                        <constraint firstAttribute="trailing" secondItem="lId-LC-Mum" secondAttribute="trailing" constant="20" id="JZH-h8-Ljc"/>
                         <constraint firstAttribute="trailing" secondItem="maj-sO-QlY" secondAttribute="trailing" constant="20" id="LKm-Ik-lVA"/>
-                        <constraint firstItem="maj-sO-QlY" firstAttribute="top" secondItem="ngm-6k-sM6" secondAttribute="bottom" constant="10" id="a7E-qe-VtQ"/>
-                        <constraint firstItem="J12-Fv-Sw8" firstAttribute="centerX" secondItem="Bgn-26-wcm" secondAttribute="centerX" id="cpE-si-d7i"/>
+                        <constraint firstItem="pJ9-Ph-zz7" firstAttribute="leading" secondItem="Bgn-26-wcm" secondAttribute="leading" constant="20" id="T7S-zS-fLY"/>
+                        <constraint firstAttribute="trailing" secondItem="pJ9-Ph-zz7" secondAttribute="trailing" constant="20" id="UED-zj-h0C"/>
+                        <constraint firstAttribute="bottom" secondItem="pJ9-Ph-zz7" secondAttribute="bottom" id="Ujz-K8-cyd"/>
                         <constraint firstItem="maj-sO-QlY" firstAttribute="centerX" secondItem="Bgn-26-wcm" secondAttribute="centerX" id="dkL-bu-RLN"/>
-                        <constraint firstItem="ngm-6k-sM6" firstAttribute="top" secondItem="Bgn-26-wcm" secondAttribute="top" constant="10" id="myg-0S-8KA"/>
-                        <constraint firstItem="J12-Fv-Sw8" firstAttribute="top" secondItem="maj-sO-QlY" secondAttribute="bottom" constant="40" id="nJA-Zn-I1b"/>
-                        <constraint firstItem="ngm-6k-sM6" firstAttribute="centerX" secondItem="Bgn-26-wcm" secondAttribute="centerX" id="t8f-Td-8oc"/>
-                        <constraint firstAttribute="bottom" secondItem="J12-Fv-Sw8" secondAttribute="bottom" constant="20" id="wfT-RT-lPr"/>
+                        <constraint firstItem="pJ9-Ph-zz7" firstAttribute="top" secondItem="maj-sO-QlY" secondAttribute="bottom" constant="10" id="nYb-DF-alo"/>
+                        <constraint firstItem="lId-LC-Mum" firstAttribute="leading" secondItem="Bgn-26-wcm" secondAttribute="leading" constant="20" id="umb-jc-MB8"/>
+                        <constraint firstItem="maj-sO-QlY" firstAttribute="top" secondItem="lId-LC-Mum" secondAttribute="bottom" constant="10" id="wSz-oz-4dw"/>
+                        <constraint firstItem="lId-LC-Mum" firstAttribute="top" secondItem="Bgn-26-wcm" secondAttribute="top" id="yNL-n7-DEg"/>
                     </constraints>
                 </view>
             </subviews>
@@ -378,8 +426,18 @@
         </view>
     </objects>
     <resources>
+        <image name="chevron.backward" catalog="system" width="97" height="128"/>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="secondaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="tertiaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.29803921568627451" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

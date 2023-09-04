@@ -3,6 +3,25 @@
     
 # Draw
     ## - Xib 사용 
+    ### 내부 Scene 구성 (공통 구성)
+        ### View
+            - Safe Area
+            - ContentView (T:0, B:0, L:0, Tr:0)
+                - HeadView (T:0, B:0, L:20, Tr:20)
+                    - BackButton (T:-, B:-, L:HeadLable.20, Tr:-, Center Y) 
+                    - HeadLabel (T:0, B:0, L:-, Tr:-, Center X, BackButton.Center Y)
+                - BodyView (T:HeadView.10, B:0, L:20, Tr:20)
+                    - {실제 데이터 구성 부분}
+                - FootView (T:BodyView.10, B:0, L:20, Tr:20)
+                    - CreatorLabel (T:40, B:20, L:-, Tr:-, Center X)
+    ### 약어 설명
+    - 문장: (T:BodyView.10, B:-, L:20, Tr:20, xxxx)
+    - 해석: AutoLayout 설정 부분
+        1. T = Top, B = Bottom, L = Leading, Tr = Trailing, xxxx = 기타 제약사항(Optional)
+        2. 일반 상수 = 해당 Component의 superView랑 연결하는 제약조건
+        3. A.상수 = A라는 Component와 해당 Component 사이에 존재하는 제약 조건
+        4. - = 해당 부분 제약 조건 선언 안함 
+
     
 # UseLibrary   
     ### pod 쓰는걸 진짜 싫어하지만 어쩔 수 없는 경우가 생겨서 pod을 생성할 예정

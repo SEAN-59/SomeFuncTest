@@ -11,6 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainViewController" customModule="SomeFuncTest" customModuleProvider="target">
             <connections>
+                <outlet property="tableView" destination="wcM-be-S8J" id="amu-XB-zAX"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -25,24 +26,17 @@
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fa5-4Y-flR">
                             <rect key="frame" x="20" y="120" width="353" height="558"/>
                             <subviews>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ApY-xe-kmx" customClass="SunButton" customModule="SunBase">
-                                    <rect key="frame" x="97.000000000000014" y="20" width="159.33333333333337" height="44"/>
-                                    <state key="normal" title="Button"/>
-                                    <buttonConfiguration key="configuration" style="plain" title="로그인 페이지">
-                                        <fontDescription key="titleFontDescription" type="system" pointSize="25"/>
-                                    </buttonConfiguration>
-                                    <userDefinedRuntimeAttributes>
-                                        <userDefinedRuntimeAttribute type="boolean" keyPath="animateBig" value="YES"/>
-                                    </userDefinedRuntimeAttributes>
-                                    <connections>
-                                        <action selector="tapSignPageBtn:" destination="-1" eventType="touchUpInside" id="b00-8W-SPq"/>
-                                    </connections>
-                                </button>
+                                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="wcM-be-S8J">
+                                    <rect key="frame" x="0.0" y="0.0" width="353" height="558"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                </tableView>
                             </subviews>
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             <constraints>
-                                <constraint firstItem="ApY-xe-kmx" firstAttribute="centerX" secondItem="fa5-4Y-flR" secondAttribute="centerX" id="Owh-c6-2zS"/>
-                                <constraint firstItem="ApY-xe-kmx" firstAttribute="top" secondItem="fa5-4Y-flR" secondAttribute="top" constant="20" id="aH9-Hl-3oU"/>
+                                <constraint firstAttribute="bottom" secondItem="wcM-be-S8J" secondAttribute="bottom" id="Mlr-Zw-CMO"/>
+                                <constraint firstAttribute="trailing" secondItem="wcM-be-S8J" secondAttribute="trailing" id="QQ6-kO-FsF"/>
+                                <constraint firstItem="wcM-be-S8J" firstAttribute="top" secondItem="fa5-4Y-flR" secondAttribute="top" id="eqw-Rg-zGl"/>
+                                <constraint firstItem="wcM-be-S8J" firstAttribute="leading" secondItem="fa5-4Y-flR" secondAttribute="leading" id="i9m-av-5f4"/>
                             </constraints>
                         </view>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FuncTest" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Zx-6F-HT7">
