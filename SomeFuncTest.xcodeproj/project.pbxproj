@@ -18,7 +18,7 @@
 		FB41E3E12AA17D0200322FC6 /* MainVC_MenuTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB41E3DD2AA17D0200322FC6 /* MainVC_MenuTableCell.swift */; };
 		FB41E3E52AA17E0100322FC6 /* ErrorTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB41E3E32AA17E0100322FC6 /* ErrorTableCell.swift */; };
 		FB41E3E62AA17E0100322FC6 /* ErrorTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB41E3E42AA17E0100322FC6 /* ErrorTableCell.xib */; };
-		FB41E3E92AA183B800322FC6 /* BioAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB41E3E82AA183B800322FC6 /* BioAuth.swift */; };
+		FB41E3E92AA183B800322FC6 /* BioAuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB41E3E82AA183B800322FC6 /* BioAuthManager.swift */; };
 		FB688C702A9DEF2300DE84AC /* AccountProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB688C6F2A9DEF2300DE84AC /* AccountProtocol.swift */; };
 		FBDB71D12A9C263400EC9F38 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDB71D02A9C263400EC9F38 /* AppDelegate.swift */; };
 		FBDB71D32A9C263400EC9F38 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDB71D22A9C263400EC9F38 /* SceneDelegate.swift */; };
@@ -49,7 +49,7 @@
 		FB41E3DD2AA17D0200322FC6 /* MainVC_MenuTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainVC_MenuTableCell.swift; sourceTree = "<group>"; };
 		FB41E3E32AA17E0100322FC6 /* ErrorTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorTableCell.swift; sourceTree = "<group>"; };
 		FB41E3E42AA17E0100322FC6 /* ErrorTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ErrorTableCell.xib; sourceTree = "<group>"; };
-		FB41E3E82AA183B800322FC6 /* BioAuth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BioAuth.swift; sourceTree = "<group>"; };
+		FB41E3E82AA183B800322FC6 /* BioAuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BioAuthManager.swift; sourceTree = "<group>"; };
 		FB688C6F2A9DEF2300DE84AC /* AccountProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountProtocol.swift; sourceTree = "<group>"; };
 		FBDB71CD2A9C263400EC9F38 /* SomeFuncTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SomeFuncTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBDB71D02A9C263400EC9F38 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -124,7 +124,7 @@
 		FB41E3E72AA183A900322FC6 /* BioAuth */ = {
 			isa = PBXGroup;
 			children = (
-				FB41E3E82AA183B800322FC6 /* BioAuth.swift */,
+				FB41E3E82AA183B800322FC6 /* BioAuthManager.swift */,
 			);
 			path = BioAuth;
 			sourceTree = "<group>";
@@ -319,7 +319,7 @@
 				FBDB71FA2A9C346F00EC9F38 /* SFT_VC.swift in Sources */,
 				FB41E3E52AA17E0100322FC6 /* ErrorTableCell.swift in Sources */,
 				FBDB71F22A9C33CC00EC9F38 /* DataModels.swift in Sources */,
-				FB41E3E92AA183B800322FC6 /* BioAuth.swift in Sources */,
+				FB41E3E92AA183B800322FC6 /* BioAuthManager.swift in Sources */,
 				FBDB71F42A9C33D500EC9F38 /* Constants.swift in Sources */,
 				FBDB71FC2A9C347500EC9F38 /* SFT_View.swift in Sources */,
 				FB41E3CB2AA1700900322FC6 /* BioAuthViewController.swift in Sources */,

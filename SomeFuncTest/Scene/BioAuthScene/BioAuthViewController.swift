@@ -15,11 +15,22 @@ import SunBase
 
 class BioAuthViewController: SFT_VC {
 
+    @IBOutlet weak var stateAuthLbl: UILabel!
+    @IBOutlet weak var bioAuthBtn: SunButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.bioAuthBtn.layer.cornerRadius = 5
+        self.bioAuthBtn.layer.borderWidth = 1
+        self.bioAuthBtn.layer.borderColor = UIColor.systemBlue.cgColor
     }
 
 
+    @IBAction func tapBioAuthBtn(_ sender: SunButton) {
+        BioAuthManager().tryBioAuth()
+    }
+    
+    
     @IBAction func tpaBackBtn(_ sender: SunButton) {
         self.popVC(popAnimate: false)
     }
